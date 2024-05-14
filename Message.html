@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Happy Anniversary</title>
+	<link rel="stylesheet" type="text/css" href="Data/css/message.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1 style="text-align: center;">Happy Anniversary💖🎉</h1>
+            <p>Dear Mahal ko💐;</p>
+            <p style="margin-left: 33px;">Surprisee!!🥳, sorry labs medyo na late na itong gift ko sorry hahaha🤣. Iknow this past few days stress and burned out ka sa work, but I hope mapasaya at mapagaan ko ang loob mo dito sa gift kahit kunti🥰.
+            Thank you mahal sa pagmamahal at effort mo sakin. Thankyou din loves sa pag papaligaya mo sakin araw-araw, sa pagstay at pag comfort mo sakin sa tuwing nasa worst ako. I really appreciated it so muchh!!💖, mahal na mahal kita Steph💖. 
+               Happy anniversary mahal ko🥰, I love you so much palagi💖😚🤗🥰.</p>
+
+               <h1 style="text-align: center;"><a href="FLowersForyou.html">🎁</a></h1>
+
+            <h2 style="text-align: right;">PS:JESTER</h2>
+        </div>
+
+
+    </div>
+<canvas class="confetti" id="canvas"></canvas>
+
+
+<audio loop autoplay>
+    <source src="Data/soundEffect/cheer.mp3" type="audio/mpeg">
+</audio>
+
+    <script>
+        window.onload = function() {
+            setInterval(gameLoop, 1000 / 10); // 10fps
+        };
+
+        let myAudio = new Audio('Data/soundEffect/cheer.mp3');
+        myAudio.loop = true;
+        myAudio.autoplay = true;
+
+        function gameLoop() {
+            if (myAudio.paused) {
+                myAudio.play().catch(error => {
+                    console.log('Playback prevented:', error);
+                });
+            }
+        }
+    </script>
+    <script src="Data/js/confetti.js"></script>
+</body>
+</html>
